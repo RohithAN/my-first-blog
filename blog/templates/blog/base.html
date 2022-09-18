@@ -12,8 +12,22 @@
   <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
-  {% block content %}
+  <header class="page-header">
+    <div class="container">
+        <h1><a href="">Django Girls Blog</a></h1>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div class="row">
+      <div class="col">
+        {% block content %}
 
-  {% endblock %}
+        {% endblock %}
+
+      </div>
+    </div>
+  </main>
+  
 </body>
 </html>
